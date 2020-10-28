@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/flipb/rpi-gpio/rpi"
+	"github.com/flipb/rpi-gpio/internal/rpi"
 )
 
 var verbose bool
