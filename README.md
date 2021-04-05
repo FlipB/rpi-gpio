@@ -11,13 +11,14 @@ Usage of rpi-gpio:
   -keep
         dont reset pin state on close
   -pin int
-        GPIO Pin to set (default -1)
+        GPIO Pin to set (required) (default -1)
   -verbose
         enable printouts
   -wait duration
-        wait time after setting pin state, before close (default 2s)
-
+        wait time after setting pin state, before close (default -1)
 ```
+
+If no `wait` duration is specified then the program has to be stopped by signalling SIGINT or SIGTERM.
 
 ## Example
 

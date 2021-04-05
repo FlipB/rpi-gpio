@@ -169,7 +169,6 @@ func (p *Pin) Close() error {
 		return err
 	}
 	if p.exportOnClose {
-		println("EXPORTING")
 		if err := setPinExport(p.number, false); err != nil {
 			return err
 		}
